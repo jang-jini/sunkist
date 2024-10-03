@@ -1,0 +1,50 @@
+@charset 'utf-8';
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Radley:ital@0;1&display=swap");
+
+:root {
+    --main-color: #ff5a00;
+    --sub-color: #ffc74e;
+    --sub-green: #008000;
+    --gnb-color: #05314d;
+    --bg-color: #fff5d9;
+    --dark-color: #555;
+    --text-color: #777;
+    --black40: rgba(0, 0, 0, 0.4);
+    --white60: rgba(255, 255, 255, 0.6);
+
+    /* fz62.5p */
+    font-size: 62.5%;
+}
+
+::selection {
+    background-color: #ffab7e;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+hr,
+.hidden {
+    position: absolute;
+    margin: -1px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+}
+
+body {
+    font: 1.6rem/1.5 "Radley", "Pretendard ", sans-serif;
+    color: var(--text-color);
+
+    word-break: keep-all; /* wbka */
+}
